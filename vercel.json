@@ -1,0 +1,9 @@
+{
+  "framework": null,
+  "installCommand": "pnpm install --frozen-lockfile",
+  "buildCommand": "pnpm --filter @workspace/palm-promax-gold run build:vercel",
+  "outputDirectory": "artifacts/palm-promax-gold/dist",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
